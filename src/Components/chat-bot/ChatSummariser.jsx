@@ -18,7 +18,7 @@ function QuickQuestionsButton({ text, disabled }) {
 
   useEffect(() => {
     if (searchAi) {
-      const genAI = new GoogleGenerativeAI("AIzaSyCjX00yVb9fbGM9AmHtKC6E_XWVOR_0TLc");
+      const genAI = new GoogleGenerativeAI("");
       async function run() {
         const model = genAI.getGenerativeModel({ model: "gemini-pro" });
         try {
